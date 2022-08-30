@@ -10,9 +10,9 @@ services:
     depends_on:
       - mongo
     deploy:
-      replicas: 10
+      replicas: 4
       update_config:
-        parallelism: 3
+        parallelism: 2
         delay: 20s
       restart_policy:
         condition: on-failure
